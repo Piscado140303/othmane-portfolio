@@ -1,0 +1,88 @@
+// Organize all body and project config
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap');
+// font-family: 'Work Sans', sans-serif;
+
+$background: #0E0E0E;
+$red: #653CD8;
+$white: #FBFBFB;
+$grey: #B5B5B5;
+
+$title: 56px;
+$subtitle: 20px;
+$paragraph: 29px;
+
+$title-mobile: 38px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: $background;
+  color: $grey;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+}
+ 
+span {
+  font-weight: 600;
+  color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dot {
+  color: $red;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* scroll ------ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $red;
+}
+
+
+//--------
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}

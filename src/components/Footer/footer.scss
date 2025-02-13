@@ -1,0 +1,47 @@
+@import "../../App.scss";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-block: 2rem;
+
+  h2 {
+    font-size: $title;
+    text-align: center;
+  }
+
+  .light-weight {
+    font-weight: 400;
+    color: $grey;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-block: 3rem;
+  }
+
+  div a {
+    color: $grey;
+    transition: all .4s;
+  }
+
+  div a:hover {
+    color: $white;
+  }
+
+  .white-a {
+    color: $white;
+  }
+}
